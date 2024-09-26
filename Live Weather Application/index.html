@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Live Weather Application</title>
+  </head>
+  <body background="weather image.jpg">
+    <div class="weather-app">
+    <div class="weather-app">
+      <header>
+        <form id="search-form" class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-form-input"
+            id="search-input-form"
+          />
+          <input
+            type="submit"
+          
+            value="Search "
+            class="search-button"
+            id="search-button"
+          />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">Paris</h1>
+            <p class="weather-app-details">
+              <span id="time">Tuesday, 14:45</span>,
+              <span id="description">scattered clouds</span>
+              <br />
+              Humidity: <span class="digits" id="humidity">66%</span>
+              <strong> <span class="digits"></span></strong>, Wind:
+              <strong>
+                <span class="digits" id="wind-speed">3.13km/h</span></strong
+              >
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div id="icon">
+              <div class="weather-app-icon">
+                <img
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                />
+              </div>
+            </div>
+            <div class="weather-app-temperature" id="temperature">12</div>
+            <div class="weather-app-units">&deg;C</div>
+          </div>
+        </div>
+
+        <div class="weather-forecast" id="forecast"></div>
+        </div>
+      </main>
+      <footer>
+        Coded by
+        <a href="https://github.com/Access2Christian">Nnaji, Christian,</a>
+        is open source on
+        <a href="https://github.com/Access2Christian/Live-Weather-Application.git">Github</a>
+        >
+      </footer>
+    </div>
+  </div>
+    <script src="index.js"></script>
+  </body>
+</html>
